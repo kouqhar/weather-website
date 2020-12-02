@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        {{user}}
+
+        <form>
+            <input type="text" placeholder="Search Location" aria-label="search" />
+            <button>Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+
+    </div>
+    {{>footer}}
+
+
+    <script defer src="/assets/js/app.js"></script>
+</body>
+
+</html>
